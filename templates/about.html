@@ -1,0 +1,19 @@
+ {% extends "layout.html" %}
+ {% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(' {{url_for('static',filename='img/about-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class=div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>
+          {{params['about_test']}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

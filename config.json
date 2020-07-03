@@ -1,0 +1,20 @@
+{
+  "params": {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/blogee",
+    "prod_uri": " mysql://root:@localhost/blogee",
+    "fb_url": "https://faacebook.com/blogee",
+    "th_url": "htpps://twitter.com/blogee",
+    "gt_url": "htpps://github.com/blogee",
+    "blog_name": "BLOG HERE",
+    "tagline": "Anyone can blog",
+    "gmail-user": "",
+    "gmail-pass": "",
+    "about_test": "",
+    "no_of_post": 5,
+    "login_image": "login.svg",
+    "admin_user": "admin",
+    "admin_password": "admin",
+    "upload_location": "C:\\Users\\lenovo\\PycharmProjects\\flask\\static"
+  }
+}

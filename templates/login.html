@@ -1,0 +1,32 @@
+ {% extends "layout.html" %}
+ {% block body %}
+  <!-- Page Header -->
+<style type="text/css">
+  padding-left:793px;
+  padding-right:793px;s
+ </style>
+<div class="text-center padded">
+  <form class="form-signin" action="/dash" method="post"  novalidate>
+    {% set fname='img/'+params['login_image'] %}
+  <img class="mb-4" src="{{url_for('static',filename=fname)}}" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Admin login</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="text" id="uname" name="uname" class="form-control" placeholder="Email address" required autofocus>
+  <label for="pass" class="sr-only">Password</label>
+  <input type="password" id="pass" name="pass" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember paassword
+    </label>
+     <label>
+      <a class="navbar-brand" href="signin">sign in</a>
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">log in</button>
+  <p class="mt-5 mb-3 text-muted">&copy;{{params['blog_name'] }}  2017-2019</p>
+</form>
+</div>
+</body>
+</html>
+
+{% endblock %}
